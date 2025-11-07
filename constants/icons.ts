@@ -4,6 +4,9 @@ import order from "@/assets/icons/order.png";
 import setting from "@/assets/icons/setting.png";
 import cart from "@/assets/icons/cart.png";
 import menu from "@/assets/icons/menu.png";
+import search from "@/assets/icons/search.png";
+import arrowback from "@/assets/icons/arrow-back.png";
+
 
 
 
@@ -16,5 +19,7 @@ export default {
   order,
   setting,
   cart,
-  menu
+  menu,
+  search,
+  arrowback,
 };
