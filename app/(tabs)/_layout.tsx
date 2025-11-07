@@ -2,14 +2,11 @@ import { Tabs } from "expo-router";
 import React from "react";
 import cn from "clsx";
 
-import { Image, ImageSourcePropType, Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
 import icons from '@/constants/icons';
+import { TabBarIconProps } from '@/type';
 
-interface TabBarIconProps {
-  focused: boolean;
-  icon: ImageSourcePropType;
-  title: string;
-}
+
 const TabIcon = ({ focused, icon, title }: TabBarIconProps) => (
   <View className='flex min-w-20 rounded-xl justify-center min-h-full gap-1 mt-12 items-center'>
     <Image
@@ -62,7 +59,7 @@ const TabsLayout = () => {
           ),
         }}
       />
-      <Tabs.Screen
+      {/* <Tabs.Screen
         name='cart'
         options={{
           headerShown: false,
@@ -71,7 +68,7 @@ const TabsLayout = () => {
             <TabIcon focused={focused} icon={icons.cart} title='Giỏ hàng' />
           ),
         }}
-      />
+      /> */}
       <Tabs.Screen
         name='order'
         options={{

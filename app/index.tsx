@@ -8,7 +8,7 @@ export default function Index() {
   const router = useRouter();
   useEffect(() => {
     const timer = setTimeout(() => {
-      router.push("/(tabs)");
+      router.replace("/(tabs)");
     }, 1500);
 
     return () => clearTimeout(timer);
